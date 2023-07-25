@@ -39,6 +39,8 @@
 
   <script src="https://cdn.jsdelivr.net/npm/add-to-calendar-button@2" async defer></script>
 
+
+
 </head>
 
 <body>
@@ -406,6 +408,26 @@
                 <div class="container">
                   <a class="btn-getstarted scrollto" href="https://www.google.com/maps/search/?api=1&query=Raj+Residency+and+convention+centre" target="_blank" rel="noopener noreferrer">📍 Navigation</a>
 
+                  <a class="btn-getstarted scrollto" id="my-default-button">Add to Calander</a>
+                  <!--<button id="my-default-button" style="background:#ffa255; color:#000; padding:8px 16px; height:fit-content; display:block; border-radius: 21px;">Click here</button>
+                  -->
+                  <script type="application/javascript">
+                    const config = {
+                      name: "[Reminder] Test the Add to Calendar Button",
+                      description: "Check out the maybe easiest way to include Add to Calendar Buttons to your web projects:[br]→ [url]https://add-to-calendar-button.com/",
+                      startDate: "2023-07-28",
+                      startTime: "10:15",
+                      endTime: "23:30",
+                      options: ["Google|My custom label", "iCal"],
+                      timeZone: "America/Los_Angeles"
+                    };
+                    const button = document.getElementById('my-default-button');
+                    if (button) {
+                      button.addEventListener('click', () => atcb_action(config, button));
+                    }
+                  </script>
+
+                  <!--
                   <add-to-calendar-button
                   name="Likhi's Mehndi Event"
                   options="'Apple','Google','iCal','Outlook.com','Microsoft 365','Microsoft Teams','Yahoo'"
@@ -418,12 +440,10 @@
                   listStyle="modal"
                   lightMode="bodyScheme"
                 ></add-to-calendar-button>
+
+                -->
                 
                 </div>
-                
-
-              
-
               </div>
               <div class="col-lg-4 order-1 order-lg-2 text-center">
                 <img src="assets/img/Mehndi.svg" alt="" class="img-fluid">
@@ -451,20 +471,12 @@
           <div class="tab-pane" id="tab-4">
             <div class="row gy-4">
               <div class="col-lg-8 order-2 order-lg-1">
-                <h3>Nostrum</h3>
-                <p>
-                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                  culpa qui officia deserunt mollit anim id est laborum
-                </p>
+                <h3>The W E D D I N G Day</h3>
                 <p class="fst-italic">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                  magna aliqua.
+                  The wedding ceremony in Hindu marriages, known as the "Vivaham" or "Shaadi," is a sacred and elaborate affair that involves various rituals and traditions. The ceremony usually takes place in front of a sacred fire (Agni) and is conducted by a Hindu priest, known as a Pandit. The couple takes vows, exchanges garlands, and performs rituals like "Saptapadi" (seven sacred steps) around the fire, symbolizing their commitment to each other and their journey through life together.
                 </p>
                 <ul>
-                  <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                  <li><i class="bi bi-check-circle-fill"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                  <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+                  <li><i class="bi bi-check-circle-fill"></i> August 31, 2023 at 04 AM IST (Thursday)</li>
                 </ul>
               </div>
               <div class="col-lg-4 order-1 order-lg-2 text-center">
@@ -476,20 +488,12 @@
           <div class="tab-pane" id="tab-5">
             <div class="row gy-4">
               <div class="col-lg-8 order-2 order-lg-1">
-                <h3>Adipiscing</h3>
-                <p>
-                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                  culpa qui officia deserunt mollit anim id est laborum
-                </p>
+                <h3>Satyanarayana Swamy Vratham (Prayers to God)</h3>
                 <p class="fst-italic">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                  magna aliqua.
+                  The Satyanarayana Swamy Vratham is a significant Hindu ritual commonly performed by families to seek the blessings of Lord Vishnu, specifically in the form of Lord Satyanarayana. In general, it can be performed on auspicious occasions like weddings for divine blessings and prosperity. The vratham involves a detailed puja with offerings of fruits, flowers, and prasadam, and it is usually followed by a feast shared with family and friends.
                 </p>
                 <ul>
-                  <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                  <li><i class="bi bi-check-circle-fill"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                  <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+                  <li><i class="bi bi-check-circle-fill"></i> September 1, 2023 at 06 AM IST (Friday)</li>
                 </ul>
               </div>
               <div class="col-lg-4 order-1 order-lg-2 text-center">
@@ -501,20 +505,12 @@
           <div class="tab-pane" id="tab-6">
             <div class="row gy-4">
               <div class="col-lg-8 order-2 order-lg-1">
-                <h3>Reprehit</h3>
-                <p>
-                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                  culpa qui officia deserunt mollit anim id est laborum
-                </p>
+                <h3>Post Wedding-Party</h3>
                 <p class="fst-italic">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                  magna aliqua.
+                  The post-wedding party or reception in Hindu marriages is a grand celebration held after the wedding ceremony to commemorate the newly married couple and introduce them to the extended family and friends. It is a festive occasion filled with music, dance, and sumptuous feasting. The couple receives blessings and good wishes from the guests, and there may be speeches, performances, and games to entertain everyone.
                 </p>
                 <ul>
-                  <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                  <li><i class="bi bi-check-circle-fill"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                  <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+                  <li><i class="bi bi-check-circle-fill"></i> September 1, 2023 at 11 AM IST (Friday)</li>
                 </ul>
               </div>
               <div class="col-lg-4 order-1 order-lg-2 text-center">

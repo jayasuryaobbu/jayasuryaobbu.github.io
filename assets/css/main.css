@@ -35,6 +35,24 @@ h6 {
   font-family: var(--font-primary);
 }
 
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 12vw;
+}
+
+/* Create a container for the text */
+.full-width-container {
+  width: 100%;
+  text-align: center; /* Optional, use this to center the text horizontally */
+}
+
+/* Style the text inside the container */
+.full-width-text {
+  display: inline-block;
+  /* Other styles for the text (e.g., font-size, color, etc.) can be added here */
+}
+
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/

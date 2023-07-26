@@ -41,6 +41,10 @@ h1 {
   font-size: 12vw;
 }
 
+h1 span {
+  color: var(--color-primary);
+}
+
 /* Create a container for the text */
 .full-width-container {
   width: 100%;

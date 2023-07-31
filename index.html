@@ -189,7 +189,26 @@
                   Nalugu is a traditional Hindu pre-wedding ritual commonly performed in South Indian weddings. It takes place separately for the bride and groom at their respective homes. During this ceremony, a mixture of turmeric, oil, and other auspicious items is applied to the bride and groom's skin to cleanse and beautify them before the wedding day.
                 </p>
                 <ul>
-                  <li><i class="bi bi-check-circle-fill"></i> Groom's Nalugu - August 28, 2023 at 10 AM IST (Monday), at Groom's Residency</li>
+                  <li><i class="bi bi-check-circle-fill"></i><p id="gnalugu-time" style="display: inline;"></p></li>
+                  <script>
+                      const gnaluguTimeIST = new Date('August 28, 2023 10:00:00 GMT+0530');
+                      function convertTognaluguTime() {
+                          const userTimeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+                          const weddingTimeUser = new Date(gnaluguTimeIST.toLocaleString('en-US', { timeZone: userTimeZone }));
+                          const options = {
+                              weekday: 'long',
+                              year: 'numeric',
+                              month: 'long',
+                              day: 'numeric',
+                              hour: 'numeric',
+                              minute: 'numeric',
+                              hour12: true
+                          };
+                          const formattedTime = weddingTimeUser.toLocaleString('en-US', options);
+                          document.getElementById('gnalugu-time').textContent = ` Groom's Nalugu - ${formattedTime} (${userTimeZone}), @ Groom's Residency`;
+                      }
+                      convertTognaluguTime();
+                  </script>
                 </ul>
                 <ul>
                   <li><a class="btn-getstarted scrollto" href="https://www.google.com/maps/search/?api=1&query=pavani+vasudevam+apartment" target="_blank" rel="noopener noreferrer">🚗 Navigation</a></li>
@@ -214,7 +233,26 @@
                   }
                 </script>
                 <ul>
-                  <li><i class="bi bi-check-circle-fill"></i> Bride's Nalugu - August 30, 2023 at 11 AM IST (Wednesday), at Bride's Residency</li>
+                  <li><i class="bi bi-check-circle-fill"></i><p id="bnalugu-time" style="display: inline;"></p></li>
+                  <script>
+                      const bnaluguTimeIST = new Date('August 30, 2023 11:00:00 GMT+0530');
+                      function convertTobnaluguTime() {
+                          const userTimeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+                          const weddingTimeUser = new Date(bnaluguTimeIST.toLocaleString('en-US', { timeZone: userTimeZone }));
+                          const options = {
+                              weekday: 'long',
+                              year: 'numeric',
+                              month: 'long',
+                              day: 'numeric',
+                              hour: 'numeric',
+                              minute: 'numeric',
+                              hour12: true
+                          };
+                          const formattedTime = weddingTimeUser.toLocaleString('en-US', options);
+                          document.getElementById('bnalugu-time').textContent = ` Bride's Nalugu - ${formattedTime} (${userTimeZone}), @ Bride's Residency`;
+                      }
+                      convertTobnaluguTime();
+                  </script>
                 </ul>
                 <ul>
                   <li><a class="btn-getstarted scrollto" href="https://www.google.com/maps/search/?api=1&query=13.959257%2C79.35190" target="_blank" rel="noopener noreferrer">🚗 Navigation</a></li>
@@ -253,7 +291,26 @@
                   The mehndi event is a traditional pre-wedding ritual in Hindu marriages, commonly held in India. During this ceremony, intricate designs are applied to the bride's hands and feet using henna paste. It is considered a symbol of good luck, love, and beauty, and the event often includes celebration with family and friends.
                 </p>
                 <ul>
-                  <li><i class="bi bi-check-circle-fill"></i> August 29, 2023 at 02 PM IST (Tuesday), at Bride's Residency</li>
+                  <li><i class="bi bi-check-circle-fill"></i><p id="mehndi-time" style="display: inline;"></p></li>
+                  <script>
+                      const mehndiTimeIST = new Date('August 29, 2023 14:00:00 GMT+0530');
+                      function convertTomehndiTime() {
+                          const userTimeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+                          const weddingTimeUser = new Date(mehndiTimeIST.toLocaleString('en-US', { timeZone: userTimeZone }));
+                          const options = {
+                              weekday: 'long',
+                              year: 'numeric',
+                              month: 'long',
+                              day: 'numeric',
+                              hour: 'numeric',
+                              minute: 'numeric',
+                              hour12: true
+                          };
+                          const formattedTime = weddingTimeUser.toLocaleString('en-US', options);
+                          document.getElementById('mehndi-time').textContent = ` ${formattedTime} (${userTimeZone}), @ Bride's Residency`;
+                      }
+                      convertTomehndiTime();
+                  </script>
                 </ul>
                 <ul>
                   <li><a class="btn-getstarted scrollto" href="https://www.google.com/maps/search/?api=1&query=13.959257%2C79.35190" target="_blank" rel="noopener noreferrer">🚗 Navigation</a></li>
@@ -292,7 +349,26 @@
                   The pre-wedding party in Hindu marriages, is a joyful and vibrant celebration held a day or two before the wedding ceremony. It is an occasion where the families of the bride and groom come together to sing, dance, and revel in the upcoming union. During the event, performances, skits, and games are organized to entertain guests and create a festive atmosphere filled with joy and excitement.
                 </p>
                 <ul>
-                  <li><i class="bi bi-check-circle-fill"></i> August 30, 2023 at 07 PM IST (Wednesday), at Raj Convention Hall, Rly. Kodur</li>
+                  <li><i class="bi bi-check-circle-fill"></i><p id="prwed-time" style="display: inline;"></p></li>
+                  <script>
+                      const prwedTimeIST = new Date('August 30, 2023 19:00:00 GMT+0530');
+                      function convertToprwedTime() {
+                          const userTimeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+                          const weddingTimeUser = new Date(prwedTimeIST.toLocaleString('en-US', { timeZone: userTimeZone }));
+                          const options = {
+                              weekday: 'long',
+                              year: 'numeric',
+                              month: 'long',
+                              day: 'numeric',
+                              hour: 'numeric',
+                              minute: 'numeric',
+                              hour12: true
+                          };
+                          const formattedTime = weddingTimeUser.toLocaleString('en-US', options);
+                          document.getElementById('prwed-time').textContent = ` ${formattedTime} (${userTimeZone}), @ Raj Convention Hall, Rly. Kodur`;
+                      }
+                      convertToprwedTime();
+                  </script>
                 </ul>
                 <ul>
                   <li><a class="btn-getstarted scrollto" href="https://www.google.com/maps/search/?api=1&query=Raj+Residency+and+convention+centre" target="_blank" rel="noopener noreferrer">🚗 Navigation</a></li>
@@ -331,7 +407,26 @@
                   The wedding ceremony in Hindu marriages, known as the "Vivaham" or "Shaadi," is a sacred and elaborate affair that involves various rituals and traditions. The ceremony usually takes place in front of a sacred fire (Agni) and is conducted by a Hindu priest, known as a Pandit. The couple takes vows, exchanges garlands, and performs rituals like "Saptapadi" (seven sacred steps) around the fire, symbolizing their commitment to each other and their journey through life together.
                 </p>
                 <ul>
-                  <li><i class="bi bi-check-circle-fill"></i> August 31, 2023 at 03 AM IST (Thursday), at Raj Convention Hall, Rly. Kodur</li>
+                  <li><i class="bi bi-check-circle-fill"></i><p id="wed-time" style="display: inline;"></p></li>
+                  <script>
+                      const wedTimeIST = new Date('August 31, 2023 03:00:00 GMT+0530');
+                      function convertTowedTime() {
+                          const userTimeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+                          const weddingTimeUser = new Date(wedTimeIST.toLocaleString('en-US', { timeZone: userTimeZone }));
+                          const options = {
+                              weekday: 'long',
+                              year: 'numeric',
+                              month: 'long',
+                              day: 'numeric',
+                              hour: 'numeric',
+                              minute: 'numeric',
+                              hour12: true
+                          };
+                          const formattedTime = weddingTimeUser.toLocaleString('en-US', options);
+                          document.getElementById('wed-time').textContent = ` ${formattedTime} (${userTimeZone}), @ Raj Convention Hall, Rly. Kodur`;
+                      }
+                      convertTowedTime();
+                  </script>
                 </ul>
                 <ul>
                   <li><a class="btn-getstarted scrollto" href="https://www.google.com/maps/search/?api=1&query=Raj+Residency+and+convention+centre" target="_blank" rel="noopener noreferrer">🚗 Navigation</a></li>
@@ -370,7 +465,26 @@
                   The Satyanarayana Swamy Vratham is a significant Hindu ritual commonly performed by families to seek the blessings of Lord Vishnu, specifically in the form of Lord Satyanarayana. In general, it can be performed on auspicious occasions like weddings for divine blessings and prosperity. The vratham involves a detailed puja with offerings of fruits, flowers, and prasadam, and it is usually followed by a feast shared with family and friends.
                 </p>
                 <ul>
-                  <li><i class="bi bi-check-circle-fill"></i> September 1, 2023 at 06 AM IST (Friday), at Groom's Residency</li>
+                  <li><i class="bi bi-check-circle-fill"></i><p id="vratham-time" style="display: inline;"></p></li>
+                  <script>
+                      const vrathamTimeIST = new Date('September 01, 2023 06:00:00 GMT+0530');
+                      function convertTovrathamTime() {
+                          const userTimeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+                          const weddingTimeUser = new Date(vrathamTimeIST.toLocaleString('en-US', { timeZone: userTimeZone }));
+                          const options = {
+                              weekday: 'long',
+                              year: 'numeric',
+                              month: 'long',
+                              day: 'numeric',
+                              hour: 'numeric',
+                              minute: 'numeric',
+                              hour12: true
+                          };
+                          const formattedTime = weddingTimeUser.toLocaleString('en-US', options);
+                          document.getElementById('vratham-time').textContent = ` ${formattedTime} (${userTimeZone}), @ Groom's Residency`;
+                      }
+                      convertTovrathamTime();
+                  </script>
                 </ul>
                 <ul>
                   <li><a class="btn-getstarted scrollto" href="https://www.google.com/maps/search/?api=1&query=pavani+vasudevam+apartment" target="_blank" rel="noopener noreferrer">🚗 Navigation</a></li>
@@ -409,7 +523,26 @@
                   The post-wedding party or reception in Hindu marriages is a grand celebration held after the wedding ceremony to commemorate the newly married couple and introduce them to the extended family and friends. It is a festive occasion filled with music, dance, and sumptuous feasting. The couple receives blessings and good wishes from the guests, and there may be speeches, performances, and games to entertain everyone.
                 </p>
                 <ul>
-                  <li><i class="bi bi-check-circle-fill"></i> September 1, 2023 at 11 AM IST (Friday), at Minerva Grand, Nellore</li>
+                  <li><i class="bi bi-check-circle-fill"></i><p id="powed-time" style="display: inline;"></p></li>
+                  <script>
+                      const powedTimeIST = new Date('September 01, 2023 11:00:00 GMT+0530');
+                      function convertTopowedTime() {
+                          const userTimeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+                          const weddingTimeUser = new Date(powedTimeIST.toLocaleString('en-US', { timeZone: userTimeZone }));
+                          const options = {
+                              weekday: 'long',
+                              year: 'numeric',
+                              month: 'long',
+                              day: 'numeric',
+                              hour: 'numeric',
+                              minute: 'numeric',
+                              hour12: true
+                          };
+                          const formattedTime = weddingTimeUser.toLocaleString('en-US', options);
+                          document.getElementById('powed-time').textContent = ` ${formattedTime} (${userTimeZone}), @ Minerva Grand, Nellore`;
+                      }
+                      convertTopowedTime();
+                  </script>
                 </ul>
                 <ul>
                   <li><a class="btn-getstarted scrollto" href="https://www.google.com/maps/search/?api=1&query=Hotel+Minerva+Grand+Nellore+%23Bluefox+Restaurent+%23+ON+The+Rocks+Bar%23" target="_blank" rel="noopener noreferrer">🚗 Navigation</a></li>
